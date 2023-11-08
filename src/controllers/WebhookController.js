@@ -3,7 +3,7 @@ import Logger from "../util/Logger.js";
 
 const WebhookController = {
   receive: (req, res) => {
-    console.log(req.body);
+    Logger.out([req.body]);
     res.json(req.body);
   },
 };

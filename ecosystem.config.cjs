@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: "AdsMonitorService",
-      namespace: "ads-monitor-server",
+      name: "SumsubAuServiceAPI",
+      namespace: "sumsub-au-server",
       script: "./src/index.js",
       watch: ["./src", "./src/*.js"],
       output: "./logs/out.log",

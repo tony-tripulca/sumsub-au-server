@@ -8,11 +8,11 @@ const AccessToken = {
       levelName: "KYC-AU",
     })
       .then((response) => {
-        console.log(response.data);
+        Logger.out([response.data]);
         res.send(response.data);
       })
       .catch((error) => {
-        console.error(error);
+        Logger.error([error]);
         res.send(error);
       });
   },

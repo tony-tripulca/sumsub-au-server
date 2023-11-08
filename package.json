@@ -1,5 +1,5 @@
 {
-  "name": "sumsub-example-server",
+  "name": "sumsub-au-server",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/tony-tripulca/sumsub-example-server.git"
+    "url": "git+ssh://git@github.com/tony-tripulca/sumsub-au-server.git"
   },
   "author": "tony-tripulca",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tony-tripulca/sumsub-example-server/issues"
+    "url": "https://github.com/tony-tripulca/sumsub-au-server/issues"
   },
-  "homepage": "https://github.com/tony-tripulca/sumsub-example-server#readme",
+  "homepage": "https://github.com/tony-tripulca/sumsub-au-server#readme",
   "dependencies": {
     "axios": "^1.6.0",
     "body-parser": "^1.20.2",

@@ -10,4 +10,4 @@ app.get("/", (req, res) => {
 
 app.get("/access-token", AccessToken.generate);
 
-app.post("/receive", WebhookController.receive);
+app.post("/au-receiver", WebhookController.receive);

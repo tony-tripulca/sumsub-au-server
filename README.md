@@ -1,1 +1,1 @@
-# Sumsub Example API Service 
+# Sumsub AU Service API 

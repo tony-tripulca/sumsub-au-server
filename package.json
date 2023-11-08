@@ -1,0 +1,19 @@
+{
+  "name": "sumsub-example-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tony-tripulca/sumsub-example-server.git"
+  },
+  "author": "tony-tripulca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tony-tripulca/sumsub-example-server/issues"
+  },
+  "homepage": "https://github.com/tony-tripulca/sumsub-example-server#readme"
+}

@@ -2,8 +2,8 @@ import axios from "axios";
 import URL from "../config/url.js";
 import { createSignature, toQueryString } from "../util/Hash.js";
 
-const TOKEN = process.env.SUMSUB_TOKEN;
-const SECRET_KEY = process.env.SUMSUB_SECRET_KEY;
+const TOKEN = process.env.SUMSUB_TOKEN_AU;
+const SECRET_KEY = process.env.SUMSUB_SECRET_KEY_AU;
 
 const SumsubService = {
   getAccessToken: (payload) => {
@@ -13,20 +13,12 @@ const SumsubService = {
       timestamp: Math.floor(Date.now() / 1000),
     };
 
-    console.log(
-      `${data.timestamp}${data.method}${data.endpoint}?${toQueryString(
-        payload
-      )}`
-    );
-
     let signature = createSignature(
       SECRET_KEY,
       `${data.timestamp}${data.method}${data.endpoint}?${toQueryString(
         payload
       )}`
     );
-
-    console.log(signature);
 
     return axios({
       method: "POST",

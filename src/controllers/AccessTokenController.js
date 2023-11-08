@@ -5,10 +5,10 @@ const AccessToken = {
   generate: (req, res) => {
     SumsubService.getAccessToken({
       userId: `user-${Math.floor(Math.random() * 1001)}`,
-      levelName: "KYC-PH",
+      levelName: "KYC-AU",
     })
       .then((response) => {
-        console.log(response);
+        console.log(response.data);
         res.send(response.data);
       })
       .catch((error) => {

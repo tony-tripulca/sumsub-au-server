@@ -1,5 +1,6 @@
 import { app } from "./Server.js";
 import AccessToken from "./controllers/AccessTokenController.js";
+import WebhookController from "./controllers/WebhookController.js";
 
 import Logger from "./util/Logger.js";
 
@@ -8,3 +9,5 @@ app.get("/", (req, res) => {
 });
 
 app.get("/access-token", AccessToken.generate);
+
+app.post("/receive", WebhookController.receive);
